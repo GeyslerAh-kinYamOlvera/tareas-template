@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Ing. Oscar</title>
+    <style>
+        :root {
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --primary: #2563eb;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+        }
+
+        h1 {
+            color: var(--text-main);
+            margin: 1.5rem 0 2.5rem 0;
+            letter-spacing: 4px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 12px;
+        }
+
+        .step-card {
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 2rem;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+        }
+
+        .step-title {
+            color: var(--text-main);
+            font-size: 1.35rem;
+            margin: 0 0 12px 0;
+        }
+
+        .step-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0 0 18px 0;
+            font-size: 1rem;
+        }
+
+        .step-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Live code</h1>
+        <!-- ========================================================
+             🎯 EJERCICIO PRÁCTICO: SECCIÓN 2
+             
+             1. Agrega una imagen <img> con su atributo src (enlace de imagen) y un texto descriptivo en alt.
+            
+             ======================================================== -->
+        <!-- Section One -->
+        <div class="step-card">
+            <h2 class="step-title">Sec one: Estructura HTML y Etiquetas</h2>
+            <p>Fundamentos de maquetación web: aprendiendo a estructurar títulos, párrafos y tarjetas de contenido con HTML semántico.</p>
+            <img src="" alt="">
+        </div>
+
+        <!-- Section Two -->
+        <div class="step-card">
+            <h2 class="step-title">Sec two: Estilos CSS y Recursos Visuales</h2>
+            <p>Aplicación de estilos modernos, variables CSS, efectos hover e inserción de imágenes responsivas para enriquecer la interfaz de usuario.</p>
+            <img src="" alt="">
+        </div>
+
+        <!-- ========================================================
+              EJERCICIO PRÁCTICO: SECCIÓN 3 (CREA TU PROPIA TARJETA)
+             
+             1. Crea una tarjeta usando la clase "step-card".
+             2. Agrega un título <h2> con la clase "step-title" (Ej: Sec three: Mi tema favorito).
+             3. Escribe un párrafo <p> describiendo tu tema.
+             4. Agrega una imagen <img> con su atributo src (enlace de imagen) y un texto descriptivo en alt.
+             ======================================================== -->
+        <!-- Escribe tu código de la Sección 3 aquí abajo  -->
+        
+    </div>
+</body>
+</html>
