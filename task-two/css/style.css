@@ -1,0 +1,111 @@
+/* ========================================================
+   VARIABLES GLOBALES (:root)
+   ======================================================== */
+:root {
+  --primary-color: rgb(56, 56, 239);
+  --secondary-color: #1e40af;
+  --bg-color: #f8fafc;
+  --text-color: #334155;
+  --card-bg: #10bc5d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ========================================================
+   NAVBAR (FLEXBOX)
+   ======================================================== */
+.navbar {
+  /* background-color: //var(--primary-color); */
+  background-color: rgb(169, 83, 3);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ========================================================
+   CONTENEDOR PRINCIPAL (CSS GRID)
+   ======================================================== */
+.main-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  /* ¡AQUÍ ESTÁ EL TRUCO! 
+       2 columnas: 70% para el contenido, 30% para el sidebar */
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 30px;
+}
+
+.content {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.cards-grid {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #e2e8f0;
+  padding: 20px;
+  border-radius: 6px;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.aviso {
+  background: #f1f5f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.footer {
+  background: var(--text-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
