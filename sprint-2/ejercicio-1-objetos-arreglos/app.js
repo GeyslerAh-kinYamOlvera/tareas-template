@@ -7,6 +7,27 @@ const usuario = {
   },
 };
 
+//[camioneta,sedan]
+
+//camioneta:{
+// "clave:"llanta"
+// "clave:"volante"
+// "clave:"puerta"
+// "clave:"bal"
+// "clave:""
+//}
+
+//sedan:{
+// "clave:"llanta"
+// "clave:"volante"
+// "clave:"puerta"
+// "clave:"bal"
+// "clave:""
+//}
+
+
+
+usuario.sprintActivo;
 usuario.presentarse();
 
 const proyectos = [
@@ -17,12 +38,49 @@ const proyectos = [
 ];
 
 console.log("Catálogo inicial de proyectos:");
+
 console.table(proyectos);
 
 const nombresDeEquipos = proyectos.map(function (proyecto) {
   return proyecto.equipo;
 });
 
+console.log("Nombres de los equipos:", nombresDeEquipos);
+
+const proyectosDestacados = proyectos.filter(function (proyecto) {
+  return proyecto.calificacion >= 9;
+});
+
+console.log(proyectosDestacados);
+
+console.log("Proyectos con calificación >= 9:");
+console.table(proyectosDestacados);
+
+
+
+// ACTIVIDAD 1
+
+function crearPerfil(ropa, ColorPelo, Mascota, colorZapato, GeneroMusical) {
+  return {
+    ropa: ropa,
+    colorPelo: ColorPelo,
+    mascota: Mascota,
+    colorZapato: colorZapato,
+    generoMusical: GeneroMusical,
+  };
+}
+
+const miPerfil = crearPerfil("Deportivo", "Negro", "Perro salchicha", "Azul;", "Reggae");
+
+console.log("Mi perfil:");
+console.log(miPerfil);
+
+const perfiles = [
+  crearPerfil("Deportivo", "Negro", "Perro salchicha", "Azul", "Reggae"),
+];
+
+console.log("Mi perfil:");
+console.table(perfiles);
 console.log("Nombres de los equipos:", nombresDeEquipos);
 
 const proyectosDestacados = proyectos.filter(function (proyecto) {
