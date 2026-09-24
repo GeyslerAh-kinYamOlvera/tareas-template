@@ -38,16 +38,13 @@ console.table(proyectosDestacados);
 // ropa, color pelo, mascota, color zapato, gen musi fav.
 // <--- AQUI TU CÓDIGO --->
 
-
 // <--- FIN DE TU CÓDIGO --->
 
 // Instrucción B: CREAR E imprimir array DE:
 // ropa, color pelo, mascota, color zapato, gen musi fav.
 // <--- AQUI TU CÓDIGO --->
 
-
 // <--- FIN DE TU CÓDIGO --->
-
 
 const contenedor = document.getElementById("resultado-dom");
 
@@ -55,28 +52,11 @@ function pintarProyectoConEventos(lista) {
   contenedor.innerHTML = "";
 
   lista.forEach(function (proyecto) {
-    // <--- EJERCICIO CLASE: DOM --->
-    // 1. Crea un div usando document.createElement
-    // 2. Ponle estilos básicos
-    // 3. Agrégale el innerHTML con el título y equipo del proyecto
-    
-    // <--- AQUI TU CÓDIGO --->
-    
-    
-    // <--- FIN DE TU CÓDIGO --->
-
-
     // <--- TAREA T2-SPRING#2: EVENTOS SIMPLES --->
-    // Instrucción: Agrega un evento de "doble clic" (ondblclick) a la tarjeta. 
+    // Instrucción: Agrega un evento de "doble clic" (ondblclick) a la tarjeta.
     // Cuando el usuario haga doble clic, la tarjeta debe desaparecer.
     // <--- AQUI TU CÓDIGO --->
-    
-    
     // <--- FIN DE TU CÓDIGO --->
-
-    // <--- EJERCICIO CLASE: INYECTAR --->
-    // 4. Inyecta la tarjeta al contenedor usando appendChild
-    
   });
 }
 
