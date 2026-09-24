@@ -32,20 +32,6 @@ const proyectosDestacados = proyectos.filter(function (proyecto) {
 console.log("Proyectos con calificación >= 9:");
 console.table(proyectosDestacados);
 
-// <--- TAREA T1-SPRING#2: OBJETOS Y ARRAYS --->
-
-// Instrucción A: CREAR E imprimir OBJETO DE:
-// ropa, color pelo, mascota, color zapato, gen musi fav.
-// <--- AQUI TU CÓDIGO --->
-
-// <--- FIN DE TU CÓDIGO --->
-
-// Instrucción B: CREAR E imprimir array DE:
-// ropa, color pelo, mascota, color zapato, gen musi fav.
-// <--- AQUI TU CÓDIGO --->
-
-// <--- FIN DE TU CÓDIGO --->
-
 const contenedor = document.getElementById("resultado-dom");
 
 function pintarProyectoConEventos(lista) {
